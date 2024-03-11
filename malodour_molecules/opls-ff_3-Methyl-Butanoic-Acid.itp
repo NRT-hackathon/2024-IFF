@@ -1,0 +1,38 @@
+; charges are not correct. Please replace them with the correct value before using this file
+[ MBA ]
+ [ atoms ]
+  CAC1    opls_267   -0.180     1
+  ODB1    opls_xxx   -0.680     1
+   OH1    opls_268   -0.680     1
+   HO1    opls_270    0.060     1
+   CH2    opls_136   -0.180     2
+  HH21    opls_282    0.060     2
+  HH22    opls_282    0.060     2
+   CH3    opls_137   -0.180     3
+  HH31    opls_140    0.060     3
+   CH4    opls_135   -0.180     4
+  HH41    opls_140    0.060     4
+  HH42    opls_140    0.060     4
+  HH43    opls_140    0.060     4
+   CH5    opls_135   -0.180     5
+  HH51    opls_140    0.060     5
+  HH52    opls_140    0.060     5
+  HH53    opls_140    0.060     5
+
+ [ bonds ]
+  CAC1  ODB1
+  CAC1   OH1
+   OH1   HO1
+  CAC1   CH2
+   CH2  HH21
+   CH2  HH22
+   CH2   CH3
+   CH3  HH31
+   CH3   CH4
+   CH3   CH5
+   CH4  HH41
+   CH4  HH42
+   CH4  HH43
+   CH5  HH51
+   CH5  HH52
+   CH5  HH53
