@@ -1,6 +1,6 @@
 [Z-4-Heptenal](https://webbook.nist.gov/cgi/cbook.cgi?ID=6728-31-0)
 
-[Ethyl Butanoate](https://pubchem.ncbi.nlm.nih.gov/compound/Ethyl-butyrate)
+[Ethyl Butanoate](https://webbook.nist.gov/cgi/cbook.cgi?ID=C105544&Mask=4&Type=ANTOINE&Plot=on)
 
 [3 Methyl Butanoic Acid](https://webbook.nist.gov/cgi/cbook.cgi?ID=503-74-2)
 
