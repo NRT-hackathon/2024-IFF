@@ -1,26 +1,26 @@
 ; charges are still wrong. Please change before using
 [ HPL ]
  [ atoms ]
-   ODB    opls_278   -0.180     1
-  CAL1    opls_277    0.060     1
-  HAL1    opls_279    0.060     1
-   CH2    opls_136    0.060     2
-  HH21    opls_282    0.500     2
-  HH22    opls_282   -0.500     2
-   CH3    opls_136    0.060     3
-  HH31    opls_140    0.500     3
-  HH32    opls_140   -0.500     3
-  CDB4    opls_141    0.060     4
-  HH41    opls_144    0.500     4
-  CDB5    opls_141    0.060     5
-  HH51    opls_144    0.500     5
-   CH6    opls_136    0.060     6
-  HH61    opls_140    0.500     6
-  HH62    opls_140   -0.500     6
-   CH7    opls_135    0.060     7
-  HH71    opls_140    0.500     7
-  HH72    opls_140   -0.500     7
-  HH73    opls_140   -0.500     7
+   ODB    opls_278   -0.660     1
+  CAL1    opls_277    0.430     1
+  HAL1    opls_279    0.400     1
+   CH2    opls_136   -0.090     2
+  HH21    opls_282    0.030     2
+  HH22    opls_282    0.030     2
+   CH3    opls_136   -0.090     3
+  HH31    opls_140    0.045     3
+  HH32    opls_140    0.045     3
+  CDB4    opls_141   -0.115     4
+  HH41    opls_144    0.115     4
+  CDB5    opls_141   -0.115     5
+  HH51    opls_144    0.115     5
+   CH6    opls_136   -0.090     6
+  HH61    opls_140    0.045     6
+  HH62    opls_140    0.045     6
+   CH7    opls_135   -0.135     7
+  HH71    opls_140    0.045     7
+  HH72    opls_140    0.045     7
+  HH73    opls_140    0.045     7
   
 
  [ bonds ]

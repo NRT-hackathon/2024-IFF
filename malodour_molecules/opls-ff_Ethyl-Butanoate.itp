@@ -1,26 +1,26 @@
-; charges are still wrong. Please change before using
+
 [ ETB ]
  [ atoms ]
-   CH1    opls_135    0.060     1
-  HH11    opls_140    0.500     1
-  HH12    opls_140   -0.500     1
-  HH13    opls_140   -0.500     1
-   CH2    opls_465   -0.500     2
-  HH21    opls_140    0.060     2
-  HH22    opls_140    0.060     2
-  OALC    opls_467   -0.680     3
-  CDB3    opls_280   -0.180     4
-  OAC3    opls_466   -0.680     4
-   CH4    opls_136   -0.180     5
-  HH41    opls_282    0.060     5
-  HH42    opls_282    0.060     5
-   CH5    opls_136   -0.180     6
-  HH51    opls_140    0.060     6
-  HH52    opls_140    0.060     6 
-   CH6    opls_136   -0.180     6
-  HH61    opls_140    0.060     6
-  HH62    opls_140    0.060     6 
-  HH63    opls_140    0.060     6 
+   CH1    opls_135   -0.135     1
+  HH11    opls_140    0.045     1
+  HH12    opls_140    0.045     1
+  HH13    opls_140    0.045     1
+   CH2    opls_465    0.190     2
+  HH21    opls_140    0.030     2
+  HH22    opls_140    0.030     2
+  OALC    opls_467   -0.330     3
+  CDB3    opls_280    0.460     4
+  OAC3    opls_466   -0.660     4
+   CH4    opls_136   -0.090     5
+  HH41    opls_282    0.030     5
+  HH42    opls_282    0.030     5
+   CH5    opls_136   -0.090     6
+  HH51    opls_140    0.030     6
+  HH52    opls_140    0.030     6 
+   CH6    opls_136   -0.135     6
+  HH61    opls_140    0.030     6
+  HH62    opls_140    0.030     6 
+  HH63    opls_140    0.030     6 
 
  [ bonds ]
    CH1  HH11
