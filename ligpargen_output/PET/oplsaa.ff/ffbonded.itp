@@ -2570,6 +2570,8 @@
 ; Z -CA-X -Y improper torsion. CA is any ring carbon (CA,CB,CN,CV,CW,CR,CK,CQ,CS,C*)
 #define improper_Z_CA_X_Y       180.0      4.60240   2
 
+; improper torsions in a PET ring
+#define improper_CAR_HAR        180.0     10.46000   2
 
 
 ; Added by DvdS for DMSO 17/06/2006
