@@ -6,5 +6,5 @@ rm *solvated*
 rm em*
 rm mdout.mdp
 rm out.gro
-rm *posre*
-rm *conf*
+rm \#em.*
+rm *npt*

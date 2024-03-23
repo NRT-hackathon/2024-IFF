@@ -36,70 +36,6 @@
 ; bonds  angles  dihedrals  impropers all_dihedrals nrexcl HH14 RemoveDih
      1       1          3          1        1         3      1     0
 
-[ PET ]
- [ atoms ]
-  OES1    opls_467   -0.5555     1
-  CES1    opls_465    0.5258     1
-  OES2    opls_466   -0.3883     1
-  CAR1    opls_145   -0.2296     1
-  CAR2    opls_145   -0.0465     1
-  CAR3    opls_145   -0.1739     1
-  CAR4    opls_145   -0.0550     1
-  CAR5    opls_145   -0.1525     1
-  CAR6    opls_145   -0.0536     1
-  CES2    opls_465    0.4927     1
-  OES3    opls_466   -0.4385     1
-  OES4    opls_467   -0.3660     1
-  CET1    opls_136   -0.0356     1
-  CET2    opls_157   -0.0242     1
-  HET3    opls_140    0.1206     1
-  HET4    opls_140    0.1206     1
-  HAR2    opls_146    0.1807     1
-  HAR3    opls_146    0.1700     1
-  HAR4    opls_146    0.1832     1
-  HAR6    opls_146    0.1766     1
-  HET1    opls_282    0.1263     1
-  HET2    opls_282    0.1263     1
-  HES1    opls_155    0.4622     1
-   OH1    opls_154   -0.5797     1
-   HO1    opls_155    0.4139     1
-
- [ bonds ]
-  OES1  HES1
-  OES1  CES1
-  CES1  OES2
-  CES1  CAR1
-  CAR1  CAR2
-  CAR2  CAR3
-  CAR3  CAR4
-  CAR4  CAR5
-  CAR5  CAR6
-  CAR5  CES2
-  CES2  OES3
-  CES2  OES4
-  CES2  CET1
-  CET1  CET2
-  CET2  OH1
-   OH1  HO1
-  CAR2  HAR2
-  CAR3  HAR3
-  CAR4  HAR4
-  CAR6  HAR6
-  CET1  HET1
-  CET1  HET2
-  CET2  HET3
-  CET2  HET4
-
-[ impropers ]
- CES2  CAR5   CAR4  CAR6    improper_CAR_HAR
- CAR1  CES1   OES1  OES2    improper_O_C_X_Y
- CAR6  CAR1   CES1  CAR2    improper_CAR_HAR
- HAR3  CAR3   CAR2  CAR4    improper_CAR_HAR
- HAR4  CAR4   CAR3  CAR5    improper_CAR_HAR
- HAR6  CAR6   CAR1  CAR5    improper_CAR_HAR
- HAR2  CAR2   CAR1  CAR3    improper_CAR_HAR
- OES4  CES2   CAR5  OES3    improper_O_C_X_Y
-
 [ ACE ]
  [ atoms ]
    CH3    opls_135   -0.180     1
@@ -108,14 +44,13 @@
   HH33    opls_140    0.060     1
      C    opls_235    0.500     2
      O    opls_236   -0.500     2
-
  [ bonds ]
    CH3  HH31
    CH3  HH32
    CH3  HH33
    CH3     C
      C     O
- [ impropers ]
+[ impropers ]
   CH3    +N    C      O     improper_O_C_X_Y 
 
 [ ALA ]

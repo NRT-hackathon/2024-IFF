@@ -1,0 +1,50 @@
+# This file was created Sat Mar 23 15:56:52 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2024.1 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/nikhil/Documents/classes/MSE_848/IFF_fiber_wetting/ligpargen_output/single_PET_with_ETB
+# Command line:
+#   gmx energy -f npt.edr -o pressure.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROup of MAchos and Cynical Suckers
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  1717.442261
+   40.000000  -202.768631
+   80.000000  593.355774
+  120.000000  -419.433746
+  160.000000  281.347198
+  200.000000  -62.614777
+  240.000000  305.402954
+  280.000000  576.919434
+  320.000000  114.257935
+  360.000000   55.258038
+  400.000000  -298.403442
+  440.000000  -228.695129
+  480.000000  -212.356262
+  520.000000  218.164688
+  560.000000  -311.419708
+  600.000000  -380.486572
+  640.000000  -599.294495
+  680.000000  347.058685
+  720.000000  -16.425482
+  760.000000  -78.272362
+  800.000000  441.869354
+  840.000000  -310.519623
+  880.000000  525.461975
+  920.000000  -217.228516
+  960.000000  857.664001
+ 1000.000000  154.474625

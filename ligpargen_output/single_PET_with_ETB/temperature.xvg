@@ -1,0 +1,50 @@
+# This file was created Sat Mar 23 16:01:07 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2024.1 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/nikhil/Documents/classes/MSE_848/IFF_fiber_wetting/ligpargen_output/single_PET_with_ETB
+# Command line:
+#   gmx energy -f npt.edr -o temperature.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000    0.628141
+   40.000000  295.673950
+   80.000000  303.378235
+  120.000000  293.093689
+  160.000000  303.970490
+  200.000000  303.736298
+  240.000000  298.007141
+  280.000000  300.707245
+  320.000000  292.605774
+  360.000000  296.155914
+  400.000000  301.356567
+  440.000000  297.552277
+  480.000000  298.646240
+  520.000000  298.758514
+  560.000000  299.674500
+  600.000000  301.379028
+  640.000000  295.009033
+  680.000000  297.273468
+  720.000000  297.907074
+  760.000000  294.507324
+  800.000000  295.358887
+  840.000000  297.869110
+  880.000000  304.089508
+  920.000000  297.409821
+  960.000000  296.722229
+ 1000.000000  299.546051

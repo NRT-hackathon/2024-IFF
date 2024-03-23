@@ -38,67 +38,70 @@
 
 [ PET ]
  [ atoms ]
-  OES1    opls_467   -0.5555     1
-  CES1    opls_465    0.5258     1
-  OES2    opls_466   -0.3883     1
-  CAR1    opls_145   -0.2296     1
-  CAR2    opls_145   -0.0465     1
-  CAR3    opls_145   -0.1739     1
-  CAR4    opls_145   -0.0550     1
-  CAR5    opls_145   -0.1525     1
-  CAR6    opls_145   -0.0536     1
-  CES2    opls_465    0.4927     1
-  OES3    opls_466   -0.4385     1
-  OES4    opls_467   -0.3660     1
-  CET1    opls_136   -0.0356     1
-  CET2    opls_157   -0.0242     1
-  HET3    opls_140    0.1206     1
-  HET4    opls_140    0.1206     1
-  HAR2    opls_146    0.1807     1
-  HAR3    opls_146    0.1700     1
-  HAR4    opls_146    0.1832     1
-  HAR6    opls_146    0.1766     1
-  HET1    opls_282    0.1263     1
-  HET2    opls_282    0.1263     1
-  HES1    opls_155    0.4622     1
-   OH1    opls_154   -0.5797     1
-   HO1    opls_155    0.4139     1
+  O00     opls_467   -0.5555     1
+  C01     opls_465    0.5258     1
+  O02     opls_466   -0.3883     1
+  C03     opls_145   -0.2296     1
+  C04     opls_145   -0.0465     1
+  C05     opls_145   -0.1739     1
+  C06     opls_145   -0.0550     1
+  C07     opls_145   -0.1525     1
+  C08     opls_145   -0.0536     1
+  C09     opls_465    0.4927     1
+  O0A     opls_466   -0.4385     1
+  O0B     opls_467   -0.3660     1
+  C0C     opls_136   -0.0356     1
+  C0D     opls_157   -0.0242     1
+  O0E     opls_154   -0.5797     1
+  H0F     opls_155    0.4622     1
+  H0G     opls_146    0.1807     1
+  H0H     opls_146    0.1700     1
+  H0I     opls_146    0.1832     1
+  H0J     opls_146    0.1766     1
+  H0K     opls_282    0.1263     1
+  H0M     opls_282    0.1263     1
+  H0N     opls_140    0.1206     1
+  H0O     opls_140    0.1206     1
+  H0P     opls_155    0.4139     1
 
  [ bonds ]
-  OES1  HES1
-  OES1  CES1
-  CES1  OES2
-  CES1  CAR1
-  CAR1  CAR2
-  CAR2  CAR3
-  CAR3  CAR4
-  CAR4  CAR5
-  CAR5  CAR6
-  CAR5  CES2
-  CES2  OES3
-  CES2  OES4
-  CES2  CET1
-  CET1  CET2
-  CET2  OH1
-   OH1  HO1
-  CAR2  HAR2
-  CAR3  HAR3
-  CAR4  HAR4
-  CAR6  HAR6
-  CET1  HET1
-  CET1  HET2
-  CET2  HET3
-  CET2  HET4
+  C01   O00
+  O02   C01
+  C03   C01
+  C04   C03
+  C05   C04
+  C06   C05
+  C07   C06
+  C08   C03
+  C09   C07
+  O0A   C09
+  O0B   C09
+  C0C   O0B
+  C0D   C0C
+  O0E   C0D
+  H0F   O00
+  H0G   C04
+  H0H   C05
+  H0I   C06
+  H0J   C08
+  H0K   C0C
+  H0M   C0C
+  H0N   C0D
+  H0O   C0D
+  H0P   O0E
+  C08   C07
+  C0D   O00+
+ O00-   C0D
 
-[ impropers ]
- CES2  CAR5   CAR4  CAR6    improper_CAR_HAR
- CAR1  CES1   OES1  OES2    improper_O_C_X_Y
- CAR6  CAR1   CES1  CAR2    improper_CAR_HAR
- HAR3  CAR3   CAR2  CAR4    improper_CAR_HAR
- HAR4  CAR4   CAR3  CAR5    improper_CAR_HAR
- HAR6  CAR6   CAR1  CAR5    improper_CAR_HAR
- HAR2  CAR2   CAR1  CAR3    improper_CAR_HAR
- OES4  CES2   CAR5  OES3    improper_O_C_X_Y
+ [ impropers ]
+  C09   C07    C06   C08    improper_CAR_HAR
+  C03   C01    O00   O02    improper_O_C_X_Y
+  C08   C03    C01   C04    improper_CAR_HAR
+  H0H   C05    C04   C06    improper_CAR_HAR
+  H0I   C06    C05   C07    improper_CAR_HAR
+  H0J   C08    C03   C07    improper_CAR_HAR
+  H0G   C04    C03   C05    improper_CAR_HAR
+  O0B   C09    C07   O0A    improper_O_C_X_Y
 
 [ ACE ]
  [ atoms ]
