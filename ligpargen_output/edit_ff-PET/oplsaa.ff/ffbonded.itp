@@ -1300,7 +1300,10 @@
   S      CA     CA      1   119.400    711.280   ; thioanisole             copy from SY-CA-CA      rcr HIVRT
   P      CA     CA      1   119.400    711.280   ; 
   CA     S      CT      1   104.200    518.816   ; thioanisole             adjusted from CT-S-CT  rcr HIVRT
- 
+  C_2     OS    HO     1    113.000    292.880 ; PET
+  ;OS     C_2    CA     1    120.000    585.760 ; PET
+  CA     C_2    OS     1    111.400    677.808 ; PET
+
 ; Charged Glutamine
 ; See. Patriksson et al. Int. J. Mass. Spectrom. 248 pp 124-135 (2006)
   OH     C      N       1   115.43     292.88
@@ -2357,6 +2360,19 @@
   C3     CT     NT     C_2     3      1.78866   3.49154   0.53555  -5.81576   0.00000   0.00000 ; (From wildcard) amine all-atom
   C3     CT     NT     C_3     3      1.78866   3.49154   0.53555  -5.81576   0.00000   0.00000 ; (From wildcard) amine all-atom
   C3     CT     NT     C3      3      1.78866   3.49154   0.53555  -5.81576   0.00000   0.00000 ; (From wildcard) amine all-atom
+  HO     OS     C_2    O_2     3      23.012    0.000   -23.012    -0.000    -0.000   0.000
+  HO     OS     C_2    CA      3      29.288   -8.368   -20.920    -0.000    -0.000   0.000
+  OS    C_2     CA     CA      3      8.786     0.000   -8.786     -0.000    -0.000    0.000
+  OS    C_2     CA     CA      3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  O_2   C_2     CA     CA      3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  O_2   C_2     CA     CA      3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  CA    CA      C_2    O_2     3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  CA    CA      C_2    OS      3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  CA    CA      C_2    O_2     3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  CA    CA      C_2    OS      3      8.786     0.000   -8.786     -0.000    -0.000   0.000
+  CA    C_2     OS     CT      3      29.288   -8.368   -20.920    -0.000    -0.000   0.000
+
+
 ; Residue-specific sidechain dihedrals, and sidechain acids. Use explicitly in rtp or top files.
 ; Chi-1 N-C-C-O in SER & THR
 #define dih_SER_THR_chi1_N_C_C_O             9.89307  -4.71746   3.67774  -8.85335   0.00000   0.00000

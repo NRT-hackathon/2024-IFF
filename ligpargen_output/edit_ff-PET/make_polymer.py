@@ -15,9 +15,10 @@ idxs_2_drop_oh_terminus = [16 - 1] # 'H0F'
 n_monomer = 22
 idxs_2_drop_monomer = [15 - 1, 16 - 1, 25 - 1] #'O0E' and 'H0P' and # 'H0F'
 
-monomer_size = 1 #nm
+# https://www.chemicalbook.com/ChemicalProductProperty_EN_CB6493400.htm#:~:text=%2Din%2Dbags.-,Chemical%20Properties,a%20molecular%20weight%20of%20~200.
+monomer_size = 0.8 #nm 
 
-f = open('PET.gro')
+f = open('2D_PET_final.gro')
 read_monomer_PET = f.readlines()
 f.close()
 
@@ -27,7 +28,7 @@ L_box = DP*monomer_size
 mol_id = "PET"
 line1 = f"{DP}N {mol_id}"
 line2 = f"{n_atoms}"
-box_size = "{0:.5f}   {0:.5f}   {0:.5f}".format(L_box//2)
+box_size = "{0:.5f}   {0:.5f}   {0:.5f}".format(L_box//2 + 1)
 
 original = read_monomer_PET[2:-1]
 original_coords = np.zeros((len(original), 3), dtype = float)
@@ -37,8 +38,6 @@ for i, line in enumerate(original):
     ls = line.split()
     original_coords[i] = ls[3:]
     original_atom_names[i] = ls[1]
-
-original_coords += 1 # correcting for shift to center box where L is half of box dimension
 
 new_coords = np.zeros((n_atoms, 3), dtype = float)
 new_atom_names = np.zeros((n_atoms), dtype = object)
@@ -61,7 +60,7 @@ for i in range(DP - 2):
     # lim1 = n_h_terminus + i*n_monomer
     slc = slice(start_idx, start_idx + n_monomer)
     curr_coords = np.delete(original_coords, idxs_2_drop_monomer, axis = 0)
-    curr_coords[:, 2] += (i + 1)*monomer_size
+    curr_coords[:, 0] += (i + 1)*monomer_size
     new_coords[slc] = curr_coords
     # new_coords[slc] = np.delete(original_coords, idxs_2_drop_monomer, axis = 0) + (i + 1)*monomer_size
     new_atom_names[slc] = np.delete(original_atom_names, idxs_2_drop_monomer, axis = 0)
@@ -73,13 +72,14 @@ for i in range(DP - 2):
 # OH terminus
 slc = slice(start_idx, start_idx + n_oh_terminus)
 curr_coords = np.delete(original_coords, idxs_2_drop_oh_terminus, axis = 0)
-curr_coords[:, 2] += (DP - 1)*monomer_size
+curr_coords[:, 0] += (DP - 1)*monomer_size
 new_coords[slc] = curr_coords
 # new_coords[slc] = np.delete(original_coords, idxs_2_drop_oh_terminus, axis = 0) + (DP - 1)*monomer_size
 new_atom_names[slc] = np.delete(original_atom_names, idxs_2_drop_oh_terminus, axis = 0)
 PET_ID[slc] = monomer_ID
 
 new_coords -= L_box//2 # Centering box at L_box//2
+# new_coords -= DP*monomer_size # Centering box at L_box//2
 
 output_str = ""
 output_str += line1 + "\n"
