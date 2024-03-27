@@ -7,4 +7,5 @@ rm em*
 rm mdout.mdp
 rm out.gro
 rm \#em.*
-rm *npt*
+rm npt*
+rm nvt*

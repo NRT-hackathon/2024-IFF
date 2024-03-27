@@ -1,5 +1,14 @@
 [ None ]
 
+[ PET ] ; H terminus
+[ replace ]
+C0D	 C0D  opls_157	 12.011	 -0.0242
+[ add ]
+1   2   O0E  C0D  H0N  H0O
+    opls_154    15.9994    -0.5797
+1   2   H0P  O0E  C0D  C0C
+    opls_155    1.008       0.4139
+
 [ GLY-NH3+ ]
 [ replace ]
 N		opls_287	14.0027	-0.3

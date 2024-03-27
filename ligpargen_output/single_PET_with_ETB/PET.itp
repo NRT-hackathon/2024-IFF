@@ -7,9 +7,9 @@
 PET                   3
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  
-     1   opls_467      1    PET   O00      1    -0.5555    15.9990
-     2   opls_465      1    PET   C01      1     0.5258    12.0110 
-     3   opls_466      1    PET   O02      1    -0.3883    15.9990 
+     1   opls_268      1    PET   O00      1    -0.5555    15.9990
+     2   opls_267      1    PET   C01      1     0.5258    12.0110 
+     3   opls_269      1    PET   O02      1    -0.3883    15.9990 
      4   opls_145      1    PET   C03      1    -0.2296    12.0110 
      5   opls_145      1    PET   C04      1    -0.0465    12.0110 
      6   opls_145      1    PET   C05      1    -0.1739    12.0110 
@@ -22,13 +22,13 @@ PET                   3
     13   opls_136      1    PET   C0C      1    -0.0356    12.0110 
     14   opls_157      1    PET   C0D      1    -0.0242    12.0110 
     15   opls_154      1    PET   O0E      1    -0.5797    15.9990 
-    16   opls_155      1    PET   H0F      1     0.4622     1.0080 
+    16   opls_270      1    PET   H0F      1     0.4622     1.0080 
     17   opls_146      1    PET   H0G      1     0.1807     1.0080 
     18   opls_146      1    PET   H0H      1     0.1700     1.0080 
     19   opls_146      1    PET   H0I      1     0.1832     1.0080 
     20   opls_146      1    PET   H0J      1     0.1766     1.0080 
-    21   opls_282      1    PET   H0K      1     0.1263     1.0080 
-    22   opls_282      1    PET   H0M      1     0.1263     1.0080 
+    21   opls_140      1    PET   H0K      1     0.1263     1.0080 
+    22   opls_140      1    PET   H0M      1     0.1263     1.0080 
     23   opls_140      1    PET   H0N      1     0.1206     1.0080 
     24   opls_140      1    PET   H0O      1     0.1206     1.0080 
     25   opls_155      1    PET   H0P      1     0.4139     1.0080

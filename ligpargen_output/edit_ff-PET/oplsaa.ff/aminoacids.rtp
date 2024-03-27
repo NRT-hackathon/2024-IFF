@@ -51,18 +51,15 @@
   O0A     opls_466   -0.4385     1
   O0B     opls_467   -0.3660     1
   C0C     opls_136   -0.0356     1
-  C0D     opls_157   -0.0242     1
-  O0E     opls_154   -0.5797     1
-  H0F     opls_155    0.4622     1
+  C0D     opls_136   -0.0242     1
   H0G     opls_146    0.1807     1
   H0H     opls_146    0.1700     1
   H0I     opls_146    0.1832     1
   H0J     opls_146    0.1766     1
-  H0K     opls_282    0.1263     1
-  H0M     opls_282    0.1263     1
+  H0K     opls_140    0.1263     1
+  H0M     opls_140    0.1263     1
   H0N     opls_140    0.1206     1
   H0O     opls_140    0.1206     1
-  H0P     opls_155    0.4139     1
 
  [ bonds ]
   C01   O00
@@ -78,8 +75,6 @@
   O0B   C09
   C0C   O0B
   C0D   C0C
-  O0E   C0D
-  H0F   O00
   H0G   C04
   H0H   C05
   H0I   C06
@@ -88,7 +83,6 @@
   H0M   C0C
   H0N   C0D
   H0O   C0D
-  H0P   O0E
   C08   C07
   C0D   O00+
  O00-   C0D

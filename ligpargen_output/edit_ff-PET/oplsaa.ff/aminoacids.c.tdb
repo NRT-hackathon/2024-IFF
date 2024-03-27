@@ -1,5 +1,14 @@
 [ None ]
 
+[ PET ] ; H terminus
+[ replace ]
+C01	 C01  opls_267	12.011	 0.5258
+O02  O02  opls_269  15.99940 -0.3883
+O00  O00  opls_268  15.99950 -0.5555
+[ add ]
+1   2   H0F  O00  C01  O02
+    opls_270    1.008    0.4622
+
 [ GLY-COO- ]
 [ replace ]
 CA	CA	opls_284	12.011	-0.02

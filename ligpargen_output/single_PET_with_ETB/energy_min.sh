@@ -32,8 +32,12 @@ gmx solvate -cp edited_conf.gro -cs spc216.gro -o solvated.gro -p topol.top
 gmx grompp -f minim.mdp -c solvated.gro -p topol.top -o em.tpr
 gmx mdrun -v -deffnm em
 
+## NVT Equilibration ##
+gmx grompp -f eqm_nvt.mdp -c em.gro -p topol.top -o nvt.tpr
+gmx mdrun -deffnm nvt
+
 ## NPT Equilibration ##
-gmx grompp -f press_eq_1.mdp -c em.gro -p topol.top -o npt.tpr
+gmx grompp -f eqm_npt.mdp -c nvt.gro -p topol.top -o npt.tpr
 gmx mdrun -deffnm npt
 
 
