@@ -28,20 +28,24 @@ gmx solvate -cp edited_conf.gro -cs spc216.gro -o solvated.gro -p topol.top
 
 ## Energy minimization process ##
 gmx grompp -f minim.mdp -c solvated.gro -p topol.top -o em.tpr
-gmx mdrun -v -deffnm em -nt 6 -pin on
+gmx mdrun -v -deffnm em -pin on
 
 ## NVT Equilibration ##
 gmx grompp -f eqm_nvt.mdp -c em.gro -p topol.top -o nvt.tpr
-gmx mdrun -deffnm nvt -nt 6 -pin on
+gmx mdrun -deffnm nvt -pin on
 
 ## NPT Equilibration ##
 gmx grompp -f eqm_npt.mdp -c nvt.gro -p topol.top -o npt.tpr
-gmx mdrun -deffnm npt -nt 6 -pin on
+gmx mdrun -deffnm npt -pin on
 
 ## Production ##
 gmx grompp -f prod_md.mdp -c npt.gro -t npt.cpt -p topol.top -o md_1.tpr
-gmx mdrun -deffnm md_1 -nt 6 -pin on
+gmx mdrun -deffnm md_1 -pin on
 
 ## some post processing ##
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf.xvg -tu ps -rmax 3 -ref 2 -sel 3 4 2 -bin 0.05
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf_LR.xvg -tu ps -cut 0.25 -rmax 3 -ref 2 -sel 3 4 2 -bin 0.05
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf_mal.xvg -tu ps -rmax 3 -ref 3 -sel 3 4 2 -bin 0.05
+gmx msd -f md_1.trr -s md_1.tpr -o msd.xvg -sel 3 2 4 -maxtau 1000
 #gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
 
