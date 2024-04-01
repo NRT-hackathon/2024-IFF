@@ -9,4 +9,3 @@ rm out.gro
 rm \#em.*
 rm npt*
 rm nvt*
-rm md*

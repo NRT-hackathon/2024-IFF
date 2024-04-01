@@ -4,7 +4,7 @@
 #include "./oplsaa.ff/forcefield.itp"
 
 ; molecule definitions
-#include "PET.itp"
+#include "PET_50N.itp"
 malodour.itp
 
 ; water definition
