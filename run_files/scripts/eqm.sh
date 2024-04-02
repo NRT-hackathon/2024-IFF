@@ -15,7 +15,7 @@ sed -i "10,\$ { /^PET/s/.*/PET              $copies/ }" "topol.top" # Adding cor
 ((copies--))
 
 # Edit box conf to fit all molecules
-gmx editconf -f PET.gro -o edited_conf.gro -c -d 1.0 -bt cubic -box $box_len
+gmx editconf -f PET.gro -o edited_conf.gro -c -d 1.0 -bt triclinic -box 65 $box_len $box_len
 
 # Add PET
 gmx insert-molecules -f edited_conf.gro -nmol $copies -try 30 -ci PET.gro -o edited_conf.gro
