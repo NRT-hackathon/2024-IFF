@@ -8,6 +8,9 @@
 *.png*
 *.xvg*
 lysozyme_tutorial
-*.gro
+*em
+*nvt*
+*npt*
+*md_1*
 *.top
 *.png
