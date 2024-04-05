@@ -2,14 +2,14 @@ title                   = 298K (Methyl) Cellulose NPT Run Parameters
 
 ; Run parameters
 integrator              = md         		; leap-frog integrator
-nsteps                  = 500000   		; 0.002 ps * 500000 = 1 ns
+nsteps                  = 100000   		; 0.002 ps * 100000 = 0.2 ns
 dt                      = 0.002      		; size of timestep in ps
 
 ; How often to save (output control)
-nstxout                 = 20000      		; save coordinates every ___ number of steps
-nstvout                 = 20000      		; save velocities every ___ number of steps
-nstenergy               = 20000      		; save energies every ___ number of steps
-nstlog                  = 20000      		; update log file every ___ number of steps
+nstxout                 = 5000      		; save coordinates every ___ number of steps
+nstvout                 = 5000      		; save velocities every ___ number of steps
+nstenergy               = 5000      		; save energies every ___ number of steps
+nstlog                  = 5000      		; update log file every ___ number of steps
 
 ; Bond parameters 
 constraint_algorithm    = lincs     		; holonomic constraints 
@@ -37,8 +37,9 @@ tau_t                   = 0.25                ; time constant, in ps
 ref_t                   = 298                 ; reference temperature for system in K
 
 ; NPT step so pressure coupling is ON
-pcoupl                  = Parrinello-Rahman   ; Pressure coupling on in NPT
+pcoupl                  = C-rescale   ; Pressure coupling on in NPT
 pcoupltype              = isotropic           ; uniform scaling of box vectors
+nstpcouple              = 20
 tau_p                   = 0.5                 ; time constant, in ps
 ref_p                   = 1.0                 ; reference pressure, in bar
 compressibility         = 4.5e-5              ; isothermal compressibility of water, bar^-1

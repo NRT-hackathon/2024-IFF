@@ -5,8 +5,8 @@ output PET_ETB_droplet.pdb
 maxit 1000
 
 # Input files
-structure PET_50N.pdb
-  fixed 290 30 30 0 0 0 # Angstroms
+structure PET_infinite.pdb
+  fixed 300 30 30 0 0 0 # Angstroms
   center
   constrain_rotation z 0. 90.
   constrain_rotation y 90. 0.
