@@ -29,43 +29,45 @@ gmx solvate -cp edited_conf.gro -cs spc216.gro -o solvated.gro -p topol.top
 
 ## Energy minimization process ##
 gmx grompp -f minim.mdp -c solvated.gro -p topol.top -o em.tpr
-gmx mdrun -v -deffnm em -pin on -rdd 1
+gmx mdrun -v -deffnm em -pin on -rdd 1 -nt 6
 
 echo "10 0"|gmx energy -f em.edr -o etot_em.xvg
 ./xvg_convert.sh etot_em
 
 ## NVT Equilibration ##
-#gmx grompp -f eqm_nvt.mdp -c em.gro -p topol.top -o nvt.tpr
-#gmx mdrun -deffnm nvt -pin on
+gmx grompp -f eqm_nvt.mdp -c em.gro -p topol.top -o nvt.tpr
+gmx mdrun -deffnm nvt -pin on -nt 6 -rdd 1
 
-#echo "15 0"|gmx energy -f nvt.edr -o t_nvt.xvg
-#./xvg_convert.sh t_nvt
+echo "15 0"|gmx energy -f nvt.edr -o t_nvt.xvg
+./xvg_convert.sh t_nvt
 
 ## NPT Equilibration ##
-#gmx grompp -f eqm_npt.mdp -c nvt.gro -p topol.top -o npt.tpr
-#gmx mdrun -deffnm npt -pin on
+gmx grompp -f eqm_npt.mdp -c nvt.gro -p topol.top -o npt.tpr
+gmx mdrun -deffnm npt -pin on -nt 6 -rdd 1
 
-#echo "15 0"|gmx energy -f npt.edr -o t_npt.xvg
-#./xvg_convert.sh t_npt
-#echo "23 0"|gmx energy -f npt.edr -o rho_npt.xvg
-#./xvg_convert.sh rho_npt
-#echo "22 0"|gmx energy -f npt.edr -o v_npt.xvg
-#./xvg_convert.sh v_npt
-#echo "17 0"|gmx energy -f npt.edr -o p_npt.xvg
-#./xvg_convert.sh p_npt
+echo "15 0"|gmx energy -f npt.edr -o t_npt.xvg
+./xvg_convert.sh t_npt
+echo "23 0"|gmx energy -f npt.edr -o rho_npt.xvg
+./xvg_convert.sh rho_npt
+echo "22 0"|gmx energy -f npt.edr -o v_npt.xvg
+./xvg_convert.sh v_npt
+echo "17 0"|gmx energy -f npt.edr -o p_npt.xvg
+./xvg_convert.sh p_npt
+echo "2 0"|gmx trjconv -s npt.tpr -f npt.trr -o npt_noPBC.trr -pbc mol -center
 
 ## Production ##
-#gmx grompp -f prod_md.mdp -c npt.gro -t npt.cpt -p topol.top -o md_1.tpr
-#gmx mdrun -deffnm md_1 -pin on
+gmx grompp -f prod_md.mdp -c npt.gro -t npt.cpt -p topol.top -o md_1.tpr
+gmx mdrun -deffnm md_1 -pin on -nt 6
 
 ## some post processing ##
-#gmx rdf -s md_1.tpr -f md_1.trr -o rdf.xvg -tu ps -rmax 3 -ref 2 -sel 3 4 2 -bin 0.05
-#./xvg_convert.sh rdf
-#gmx rdf -s md_1.tpr -f md_1.trr -o rdf_LR.xvg -tu ps -cut 0.25 -rmax 3 -ref 2 -sel 3 4 2 -bin 0.05
-#./xvg_convert.sh rdf_LR
-#gmx rdf -s md_1.tpr -f md_1.trr -o rdf_mal.xvg -tu ps -rmax 3 -ref 3 -sel 3 4 2 -bin 0.05
-#./xvg_convert.sh rdf_mal
-#gmx msd -f md_1.trr -s md_1.tpr -o msd.xvg -sel 3 2 4 -maxtau 1000
-#./xvg_convert.sh msd
-#gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf.xvg -tu ps -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf_LR.xvg -tu ps -cut 0.25 -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf_LR
+gmx rdf -s md_1.tpr -f md_1.trr -o rdf_mal.xvg -tu ps -rmax 3 -ref 2.5 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf_mal
+gmx msd -f md_1.trr -s md_1.tpr -o msd.xvg -sel 3 4 5 6 2 -maxtau 1000
+./xvg_convert.sh msd
+echo "2 0"|gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
+
 
