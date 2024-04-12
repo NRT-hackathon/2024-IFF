@@ -5,7 +5,7 @@ output MBA_droplet_PET_fibril_4.pdb
 maxit 1000
 
 # Input files
-structure PET_50N.pdb
+structure PET_infinite.pdb
   fixed 290 20 20 0 0 0 # Angstroms
   center
   constrain_rotation z 0. 90.
@@ -14,7 +14,7 @@ structure PET_50N.pdb
 end structure
 
 # Input files
-structure PET_50N.pdb
+structure PET_infinite.pdb
   fixed 290 20 40 0 0 0 # Angstroms
   center
   constrain_rotation z 0. 90.
@@ -23,7 +23,7 @@ structure PET_50N.pdb
 end structure
 
 # Input files
-structure PET_50N.pdb
+structure PET_infinite.pdb
   fixed 290 40 20 0 0 0 # Angstroms
   center
   constrain_rotation z 0. 90.
@@ -32,7 +32,7 @@ structure PET_50N.pdb
 end structure
 
 # Input files
-structure PET_50N.pdb
+structure PET_infinite.pdb
   fixed 290 40 40 0 0 0 # Angstroms
   center
   constrain_rotation z 0. 90.
@@ -44,3 +44,14 @@ structure MBA.pdb
   number 200
   inside sphere 290 30 30 30
 end structure
+
+structure MBA.pdb
+  number 200
+  inside sphere 90 30 30 30
+end structure
+
+structure MBA.pdb
+  number 200
+  inside sphere 490 30 30 30
+end structure
+
