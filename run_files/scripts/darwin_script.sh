@@ -1,12 +1,12 @@
 #!/bin/bash -l
 
 #SBATCH --nodes=1
-#SBATCH --ntasks=8
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks=32
+#SBATCH --ntasks-per-node=32
 #SBATCH --mem-per-cpu=4096M
 #SBATCH --partition=idle
-#SBATCH --time=0-00:10:00
-#SBATCH --job-name=HEP_test
+#SBATCH --time=0-24:00:00
+#SBATCH --job-name=MBA_droplet
 
 #SBATCH --export=NONE
 
@@ -19,30 +19,14 @@ cd $SLURM_SUBMIT_DIR
 GROMACS_DOUBLE_PRECISION=YES
 GROMACS_MDRUN_FLAGS=()
 
-copies=$1 # number of PET molecules
-box_len=$2 # size of box
-filename=$3 # identity of malodour molecule
-copies_small=$4 # number of malofour molecules
+#./eqm.sh ETB 200
+if [ -f md_1.tpr ]; then
+	gmx_mpi mdrun -s md_1.tpr -cpi md_1.cpt -deffnm md_1 -append -pin on
+	echo "2 0"|gmx_mpi trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
+	echo "15 0"|gmx_mpi energy -f md_1.edr -o t_prod.xvg
+else
+	./eqm.sh MBA 200
 
-##  pre-processing ##
-cp template.top topol.top
-sed -i "1,\$ { /^malodour.itp/s/.*/\#include \"$filename.itp\"/ }" "topol.top"
-sed -i "10,\$ { /^malodour/s/.*/$filename              $copies_small/ }" "topol.top" # adding the correct number of malodour molecules to the topolgy file
-sed -i "10,\$ { /^PET/s/.*/PET              $copies/ }" "topol.top" # Adding correct number of PET to the topology file
-((copies--))
+fi
 
-# Edit box conf to fit all molecules
-gmx_mpi editconf -f PET.gro -o edited_conf.gro -c -d 1.0 -bt cubic -box $box_len
-
-# Add PET
-gmx_mpi insert-molecules -f edited_conf.gro -nmol $copies -try 30 -ci PET.gro -o edited_conf.gro
-
-# Add malodour
-gmx_mpi insert-molecules -f edited_conf.gro -nmol $copies_small -try 30 -ci "$filename.gro" -o edited_conf.gro
-
-# Solvate
-gmx_mpi solvate -cp edited_conf.gro -cs spc216.gro -o solvated.gro -p topol.top
-
-## Energy minimization process ##
-gmx_mpi grompp -f minim.mdp -c solvated.gro -p topol.top -o em.tpr
-gmx_mpi mdrun -v -deffnm em -pin on
+./postprocess.sh
