@@ -6,18 +6,18 @@ nsteps                  = 25000   ; 0.002 * 25000 = 50 ps
 dt                      = 0.002     ; time step in ps
 
 ; Output control
-nstxout                 = 5000       ; save coordinates every ___ number of steps
-nstvout                 = 5000       ; save velocities every ___ number of steps
-nstenergy               = 5000       ; save energies every ___ number of steps
-nstlog                  = 5000       ; update log file every ___ number of steps
+nstxout                 = 1000       ; save coordinates every ___ number of steps
+nstvout                 = 1000       ; save velocities every ___ number of steps
+nstenergy               = 1000       ; save energies every ___ number of steps
+nstlog                  = 1000       ; update log file every ___ number of steps
 
 ; Bond parameters
-constraint_algorithm    = lincs     ; holonomic constraints 
+constraint_algorithm    = lincs     ; holonomic constraints
 constraints             = h-bonds ; bonds are constrained
 lincs_iter              = 1         ; accuracy of LINCS
 lincs_order             = 4         ; also related to accuracy
 
-; Nonbonded settings 
+; Nonbonded settings
 cutoff-scheme           = Verlet    ; Buffered neighbor searching
 ns_type                 = grid      ; search neighboring grid cells
 nstlist                 = 10        ; 20 fs, largely irrelevant with Verlet
@@ -41,7 +41,7 @@ pcoupl                  = no        ; no pressure coupling in NVT
 
 ; Periodic boundary conditions
 pbc                     = xyz       ; PBC in x, y, & z
-periodic_molecules      = yes
+periodic-molecules      = no
 
 ; Velocity generation
 continuation            = no        ; first dynamics run, initial velocities have to be assigned

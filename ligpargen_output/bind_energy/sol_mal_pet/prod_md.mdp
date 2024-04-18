@@ -1,7 +1,7 @@
 title                   = OPLS polymer + malodour production 
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 250000    ; 2 * 250000 = 500 ps (0.5 ns)
+nsteps                  = 500000    ; 2 * 500000 = 1000 ps (1 ns)
 dt                      = 0.002     ; 2 fs
 
 ; Output control
@@ -10,7 +10,8 @@ nstvout                 = 5000         ; 0 for output frequency of nstxout,
 nstfout                 = 5000         ; nstvout, and nstfout
 nstenergy               = 5000      ; save energies every 10.0 ps
 nstlog                  = 5000      ; update log file every 10.0 ps
-;nstxout-compressed      = 5000      ; save compressed coordinates every 10.0 ps
+energygrps              = PET MBA SOL
+;nstxout-compressed      = 20000      ; save compressed coordinates every 10.0 ps
 ;compressed-x-grps       = System    ; save the whole system
 
 ; Bond parameters
@@ -47,9 +48,10 @@ compressibility         = 4.5e-5                ; isothermal compressibility of 
 
 ; Periodic boundary conditions
 pbc                     = xyz       ; 3-D PBC
-periodic-molecules      = yes
+periodic-molecules      = no
 
 ; Dispersion correction
 DispCorr                = EnerPres  ; account for cut-off vdW scheme
+
 ; Velocity generation
 gen_vel                 = no        ; Velocity generation is off

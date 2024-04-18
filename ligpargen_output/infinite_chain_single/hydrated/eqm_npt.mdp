@@ -46,6 +46,7 @@ refcoord_scaling        = com
 
 ; Periodic boundary conditions (PBC)
 pbc                     = xyz       	      ; PBC in x, y, & z
+periodic_molecules      = yes
 
 ; Velocity generation
 continuation            = yes  		      ; Continuing dynamics from previous NVT step

@@ -59,15 +59,17 @@ echo "2 0"|gmx trjconv -s npt.tpr -f npt.trr -o npt_noPBC.trr -pbc mol -center
 gmx grompp -f prod_md.mdp -c npt.gro -t npt.cpt -p topol.top -o md_1.tpr
 gmx mdrun -deffnm md_1 -pin on -nt 6
 
-## some post processing ##
-gmx rdf -s md_1.tpr -f md_1.trr -o rdf.xvg -tu ps -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
-./xvg_convert.sh rdf
-gmx rdf -s md_1.tpr -f md_1.trr -o rdf_LR.xvg -tu ps -cut 0.25 -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
-./xvg_convert.sh rdf_LR
-gmx rdf -s md_1.tpr -f md_1.trr -o rdf_mal.xvg -tu ps -rmax 3 -ref 2.5 -sel 3 4 5 6 2 -bin 0.05
-./xvg_convert.sh rdf_mal
-gmx msd -f md_1.trr -s md_1.tpr -o msd.xvg -sel 3 4 5 6 2 -maxtau 1000
-./xvg_convert.sh msd
 echo "2 0"|gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
+
+## some post processing ##
+gmx rdf -s md_1.tpr -f md_1_noPBC.trr -o rdf.xvg -tu ps -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf
+gmx rdf -s md_1.tpr -f md_1_noPBC.trr -o rdf_LR.xvg -tu ps -cut 0.25 -rmax 2.5 -ref 2 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf_LR
+gmx rdf -s md_1.tpr -f md_1_noPBC.trr -o rdf_mal.xvg -tu ps -rmax 3 -ref 2.5 -sel 3 4 5 6 2 -bin 0.05
+./xvg_convert.sh rdf_mal
+gmx msd -f md_1_noPBC.trr -s md_1.tpr -o msd.xvg -sel 3 4 5 6 2 -maxtau 1000
+./xvg_convert.sh msd
+#echo "2 0"|gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
 
 
