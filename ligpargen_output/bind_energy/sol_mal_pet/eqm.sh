@@ -56,7 +56,7 @@ echo "17 0"|gmx energy -f npt.edr -o p_npt.xvg
 ## Production ##
 gmx grompp -f prod_md.mdp -c npt.gro -t npt.cpt -p topol.top -o md_1.tpr
 gmx mdrun -deffnm md_1 -pin on -nt 6
-gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
+echo "2 0"|gmx trjconv -s md_1.tpr -f md_1.trr -o md_1_noPBC.trr -pbc mol -center
 
 ./post_process.sh
 

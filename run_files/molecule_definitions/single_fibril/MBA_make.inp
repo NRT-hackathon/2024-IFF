@@ -1,0 +1,25 @@
+# constants
+tolerance 2.0
+filetype pdb
+output MBA_droplet_PET_fibril_4.pdb
+maxit 1000
+
+structure PET_fibril_4.pdb
+  fixed 290 30 30 0 0 0
+  center
+end structure
+
+structure MBA.pdb
+  number 150
+  inside sphere 290 30 30 20
+end structure
+
+structure MBA.pdb
+  number 150
+  inside sphere 90 30 30 20
+end structure
+
+structure MBA.pdb
+  number 150
+  inside sphere 490 30 30 20
+end structure
