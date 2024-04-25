@@ -6,36 +6,36 @@ maxit 1000
 
 # Input files
 structure PET_infinite.pdb
-  fixed 290 0 0 0 0 0 # Angstroms
+  fixed 290 0 0 0.785 0 0 # Angstroms
   center
-  constrain_rotation z 0. 90.
-  constrain_rotation y 90. 0.
+#  constrain_rotation z 0. 90.
+#  constrain_rotation y 90. 0.
   #constrain_rotation x 90. 0.
 end structure
 
 # Input files
 structure PET_infinite.pdb
-  fixed 290 4 0 0 0 0 # Angstroms
+  fixed 290 4 0 0.785 0 0 # Angstroms
   center
-  constrain_rotation z 0. 90.
-  constrain_rotation y 90. 0.
+#  constrain_rotation z 0. 90.
+#  constrain_rotation y 90. 0.
   #constrain_rotation x 90. 0.
 end structure
 
 # Input files
 structure PET_infinite.pdb
-  fixed 290 0 4 0 0 0 # Angstroms
+  fixed 290 0 4 0.785 0 0 # Angstroms
   center
-  constrain_rotation z 0. 90.
-  constrain_rotation y 90. 0.
+#  constrain_rotation z 0. 90.
+#  constrain_rotation y 90. 0.
   #constrain_rotation x 90. 0.
 end structure
 
 # Input files
 structure PET_infinite.pdb
-  fixed 290 4 4 0 0 0 # Angstroms
+  fixed 290 4 4 0.785 0 0 # Angstroms
   center
-  constrain_rotation z 0. 90.
-  constrain_rotation y 90. 0.
+#  constrain_rotation z 0. 90.
+#  constrain_rotation y 90. 0.
   #constrain_rotation x 90. 0.
 end structure
