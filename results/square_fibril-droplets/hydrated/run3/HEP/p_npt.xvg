@@ -1,0 +1,45 @@
+# This file was created Wed Apr 24 21:19:34 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/square_fibril-droplets/hydrated/run3/HEP
+# Command line:
+#   gmx_mpi energy -f npt.edr -o p_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  -1745.285034
+   10.000000  -24.413452
+   20.000000   -2.452271
+   30.000000    3.148275
+   40.000000   54.399372
+   50.000000    8.138265
+   60.000000  -50.236492
+   70.000000  124.399452
+   80.000000  -74.845787
+   90.000000  -38.025066
+  100.000000  -13.413533
+  110.000000  -11.948527
+  120.000000  -25.250284
+  130.000000   60.592041
+  140.000000  -28.337362
+  150.000000  -79.930260
+  160.000000  -80.974854
+  170.000000    6.607381
+  180.000000  -34.596722
+  190.000000   30.077188
+  200.000000   14.666057

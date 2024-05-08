@@ -1,0 +1,45 @@
+# This file was created Wed Apr 24 21:19:33 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/square_fibril-droplets/hydrated/run3/MBA
+# Command line:
+#   gmx_mpi energy -f npt.edr -o p_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  -1732.997437
+   10.000000   43.642620
+   20.000000   40.554279
+   30.000000  -32.488605
+   40.000000  -94.089149
+   50.000000   15.071777
+   60.000000   61.373615
+   70.000000  -19.968872
+   80.000000   83.501305
+   90.000000   22.978922
+  100.000000  -53.203449
+  110.000000   77.266563
+  120.000000  -32.588581
+  130.000000   69.454506
+  140.000000   48.283813
+  150.000000  -36.698975
+  160.000000  -141.518555
+  170.000000  -84.315956
+  180.000000   14.334514
+  190.000000   53.842285
+  200.000000  -58.376831

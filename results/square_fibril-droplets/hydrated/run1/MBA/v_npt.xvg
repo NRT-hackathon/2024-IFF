@@ -1,0 +1,45 @@
+# This file was created Wed Apr 24 21:17:52 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/square_fibril-droplets/hydrated/run1/MBA
+# Command line:
+#   gmx_mpi energy -f npt.edr -o v_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(nm^3)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Volume"
+    0.000000  2160.000000
+   10.000000  2037.791870
+   20.000000  2035.882812
+   30.000000  2039.358765
+   40.000000  2038.238281
+   50.000000  2036.573120
+   60.000000  2037.980713
+   70.000000  2036.708618
+   80.000000  2036.108276
+   90.000000  2035.482422
+  100.000000  2033.950195
+  110.000000  2035.439331
+  120.000000  2035.591797
+  130.000000  2037.628052
+  140.000000  2035.886353
+  150.000000  2034.750854
+  160.000000  2035.581299
+  170.000000  2040.059937
+  180.000000  2036.861816
+  190.000000  2038.280029
+  200.000000  2037.638062

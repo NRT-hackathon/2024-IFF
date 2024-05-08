@@ -1,0 +1,45 @@
+# This file was created Wed Apr 24 21:17:31 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/square_fibril-droplets/hydrated/run1/HEP
+# Command line:
+#   gmx_mpi energy -f npt.edr -o p_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs On Most of All Computer Systems
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  -1788.525269
+   10.000000  113.361450
+   20.000000   16.409790
+   30.000000   76.123047
+   40.000000  -31.922852
+   50.000000  -110.791832
+   60.000000  -74.933876
+   70.000000  -20.923178
+   80.000000  -125.425453
+   90.000000    7.773315
+  100.000000   -1.452026
+  110.000000  -11.039307
+  120.000000   47.207355
+  130.000000   81.388878
+  140.000000   24.113688
+  150.000000  -106.905640
+  160.000000    2.468099
+  170.000000  -117.331017
+  180.000000  -29.872763
+  190.000000  -60.486084
+  200.000000  165.844193

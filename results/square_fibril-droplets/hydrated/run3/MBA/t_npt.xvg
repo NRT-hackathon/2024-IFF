@@ -1,0 +1,45 @@
+# This file was created Wed Apr 24 21:19:31 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/square_fibril-droplets/hydrated/run3/MBA
+# Command line:
+#   gmx_mpi energy -f npt.edr -o t_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  299.991516
+   10.000000  297.311371
+   20.000000  296.968170
+   30.000000  298.631470
+   40.000000  297.553619
+   50.000000  298.095581
+   60.000000  297.771179
+   70.000000  298.599762
+   80.000000  298.513000
+   90.000000  298.472778
+  100.000000  297.894562
+  110.000000  297.811401
+  120.000000  297.287842
+  130.000000  298.589569
+  140.000000  297.749420
+  150.000000  298.310822
+  160.000000  297.994629
+  170.000000  297.521332
+  180.000000  299.378571
+  190.000000  298.091888
+  200.000000  297.381012
