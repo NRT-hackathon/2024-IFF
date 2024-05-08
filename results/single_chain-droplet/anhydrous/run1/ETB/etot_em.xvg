@@ -1,0 +1,44 @@
+# This file was created Fri Apr 19 10:27:43 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/anhydrous/run1/ETB
+# Command line:
+#   gmx_mpi energy -f em.edr -o etot_em.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROup of MAchos and Cynical Suckers
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  91760.539062
+    1.000000  79056.445312
+    2.000000  58387.800781
+    3.000000  39479.968750
+    4.000000  31072.632812
+    6.000000  26759.269531
+    8.000000  24158.664062
+    9.000000  23585.882812
+   10.000000  21392.521484
+   12.000000  19080.730469
+   14.000000  18389.171875
+   15.000000  17734.796875
+   16.000000  17438.060547
+   17.000000  16947.019531
+   19.000000  15750.460938
+   20.000000  15021.733398
+   21.000000  14803.014648
+   22.000000  14764.792969
+   23.000000  14741.836914
+   25.000000  13146.425781

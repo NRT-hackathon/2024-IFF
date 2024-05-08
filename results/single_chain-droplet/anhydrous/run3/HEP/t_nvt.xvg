@@ -1,0 +1,50 @@
+# This file was created Fri Apr 19 10:30:31 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/anhydrous/run3/HEP
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  318.135681
+   10.000000  291.343231
+   20.000000  300.395782
+   30.000000  299.137512
+   40.000000  301.566162
+   50.000000  300.546082
+   60.000000  298.701599
+   70.000000  300.665802
+   80.000000  301.594513
+   90.000000  296.833099
+  100.000000  297.130585
+  110.000000  300.748535
+  120.000000  299.273773
+  130.000000  293.214294
+  140.000000  294.362427
+  150.000000  296.359375
+  160.000000  299.126740
+  170.000000  288.464142
+  180.000000  293.565979
+  190.000000  300.115173
+  200.000000  300.282227
+  210.000000  298.078339
+  220.000000  294.566162
+  230.000000  298.215759
+  240.000000  303.938019
+  250.000000  291.095886

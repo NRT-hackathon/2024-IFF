@@ -1,0 +1,50 @@
+# This file was created Fri Apr 19 10:30:11 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/anhydrous/run2/HEP
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Georgetown Riga Oslo Madrid Amsterdam Chisinau Stockholm
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  313.652039
+   10.000000  299.374847
+   20.000000  301.737335
+   30.000000  297.005890
+   40.000000  296.209625
+   50.000000  301.515472
+   60.000000  302.168457
+   70.000000  295.354370
+   80.000000  292.958801
+   90.000000  298.671356
+  100.000000  298.167236
+  110.000000  291.824280
+  120.000000  307.335815
+  130.000000  295.685638
+  140.000000  300.640808
+  150.000000  296.750610
+  160.000000  302.860626
+  170.000000  307.504517
+  180.000000  295.099823
+  190.000000  294.686584
+  200.000000  294.428558
+  210.000000  307.490356
+  220.000000  306.088531
+  230.000000  298.925018
+  240.000000  295.055481
+  250.000000  295.468536

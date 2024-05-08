@@ -1,0 +1,50 @@
+# This file was created Fri Apr 19 10:30:06 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/anhydrous/run1/ETB
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  313.629395
+   10.000000  294.746033
+   20.000000  299.643677
+   30.000000  297.236450
+   40.000000  299.292633
+   50.000000  305.533386
+   60.000000  296.186371
+   70.000000  296.818146
+   80.000000  294.145569
+   90.000000  293.712769
+  100.000000  294.363281
+  110.000000  296.910767
+  120.000000  296.069214
+  130.000000  297.534454
+  140.000000  302.922668
+  150.000000  297.844025
+  160.000000  297.319885
+  170.000000  297.666351
+  180.000000  299.738464
+  190.000000  297.503876
+  200.000000  303.861511
+  210.000000  296.086426
+  220.000000  299.556763
+  230.000000  294.075073
+  240.000000  301.668488
+  250.000000  294.389130
