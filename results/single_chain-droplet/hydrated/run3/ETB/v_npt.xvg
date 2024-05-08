@@ -1,0 +1,45 @@
+# This file was created Thu Apr 18 23:58:07 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/hydrated/run3/ETB
+# Command line:
+#   gmx_mpi energy -f npt.edr -o v_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(nm^3)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Volume"
+    0.000000  1500.000000
+   10.000000  1460.219849
+   20.000000  1459.315430
+   30.000000  1460.539429
+   40.000000  1455.916138
+   50.000000  1461.517700
+   60.000000  1459.051270
+   70.000000  1457.788208
+   80.000000  1459.664795
+   90.000000  1456.353149
+  100.000000  1455.828491
+  110.000000  1458.889038
+  120.000000  1456.369629
+  130.000000  1462.889771
+  140.000000  1459.081665
+  150.000000  1460.401001
+  160.000000  1459.101807
+  170.000000  1458.476685
+  180.000000  1460.016724
+  190.000000  1459.311646
+  200.000000  1459.848022

@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 23:50:49 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-droplet/hydrated/run3/HEP
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Great Red Owns Many ACres of Sand 
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  298.371979
+    2.000000  297.714203
+    4.000000  297.995148
+    6.000000  298.799622
+    8.000000  296.894562
+   10.000000  298.876740
+   12.000000  297.736267
+   14.000000  296.943390
+   16.000000  298.061279
+   18.000000  297.543732
+   20.000000  298.971588
+   22.000000  297.197235
+   24.000000  297.210602
+   26.000000  298.786865
+   28.000000  298.531250
+   30.000000  298.565826
+   32.000000  298.091614
+   34.000000  297.664886
+   36.000000  298.575317
+   38.000000  299.755890
+   40.000000  297.963470
+   42.000000  299.514343
+   44.000000  297.811615
+   46.000000  298.453369
+   48.000000  298.959259
+   50.000000  298.608154
