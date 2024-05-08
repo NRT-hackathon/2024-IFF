@@ -1,0 +1,45 @@
+# This file was created Tue Apr  9 23:08:12 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-single_molecule/run1
+# Command line:
+#   gmx_mpi energy -f npt.edr -o rho_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kg/m^3)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Density"
+    0.000000  967.854614
+   10.000000  1047.112671
+   20.000000  1051.457886
+   30.000000  1051.443604
+   40.000000  1049.628052
+   50.000000  1049.493286
+   60.000000  1052.492798
+   70.000000  1046.006470
+   80.000000  1046.701416
+   90.000000  1049.701294
+  100.000000  1048.710938
+  110.000000  1047.685669
+  120.000000  1050.750366
+  130.000000  1047.698242
+  140.000000  1047.930298
+  150.000000  1050.055420
+  160.000000  1049.348267
+  170.000000  1045.825073
+  180.000000  1044.950806
+  190.000000  1048.841797
+  200.000000  1053.424438

@@ -1,0 +1,23 @@
+; PET and malodour molecules in opls-AA forcefield
+
+; FF definition
+#include "./oplsaa.ff/forcefield.itp"
+
+; molecule definitions
+#include "PET_infinite.itp"
+#include "MBA.itp"
+#include "HEP.itp"
+#include "ETB.itp"
+
+; water definition
+#include "./oplsaa.ff/spc.itp"
+
+[ system ]
+Mix of malodour and polymer in water
+
+[ molecules ]
+;molecule name   nr.
+PET              1
+MBA              4
+HEP              4
+ETB              4

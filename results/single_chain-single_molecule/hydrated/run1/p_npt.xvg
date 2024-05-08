@@ -1,0 +1,45 @@
+# This file was created Tue Apr  9 23:08:14 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-single_molecule/run1
+# Command line:
+#   gmx_mpi energy -f npt.edr -o p_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Pressure"
+    0.000000  -2049.862549
+   10.000000   77.712891
+   20.000000  115.298218
+   30.000000   50.887127
+   40.000000   94.984459
+   50.000000  -122.609825
+   60.000000  238.542801
+   70.000000  -50.297039
+   80.000000  -67.794518
+   90.000000  -133.857498
+  100.000000   85.616051
+  110.000000  -91.104698
+  120.000000  274.338593
+  130.000000  -84.697304
+  140.000000  -15.636067
+  150.000000  229.877762
+  160.000000  -59.159710
+  170.000000  -153.233109
+  180.000000  -242.407898
+  190.000000   55.771198
+  200.000000  131.250778

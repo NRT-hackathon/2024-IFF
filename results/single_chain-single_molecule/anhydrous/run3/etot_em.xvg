@@ -1,0 +1,43 @@
+# This file was created Fri Apr 19 00:08:52 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-single_molecule/anhydrous/run3
+# Command line:
+#   gmx_mpi energy -f em.edr -o etot_em.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  55204.457031
+    1.000000  46824.320312
+    2.000000  31745.140625
+    3.000000  24113.294922
+    4.000000  23886.140625
+    6.000000  16785.304688
+    8.000000  15838.957031
+   10.000000  14660.236328
+   11.000000  14066.105469
+   13.000000  13404.117188
+   14.000000  12928.458008
+   16.000000  12531.998047
+   17.000000  12156.160156
+   18.000000  11802.322266
+   19.000000  11493.415039
+   21.000000  11216.687500
+   22.000000  10985.768555
+   24.000000  10774.253906
+   25.000000  10585.256836

@@ -1,0 +1,35 @@
+# This file was created Wed Apr 10 14:50:23 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/single_chain-single_molecule/anhydrous/run1
+# Command line:
+#   gmx_mpi energy -f npt.edr -o t_npt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  297.062195
+    2.000000  291.979919
+    4.000000  291.238983
+    6.000000  312.218140
+    8.000000  300.828369
+   10.000000  301.217621
+   12.000000  304.187592
+   14.000000  291.399017
+   16.000000  299.018341
+   18.000000  284.366028
+   20.000000  307.469971
