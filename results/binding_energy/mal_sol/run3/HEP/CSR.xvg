@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:45:33 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run3/HEP
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o CSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coul-SR:HEP-SOL"
+    0.000000  -15863.784180
+  400.000000  -16015.413086
+  800.000000  -15753.850586
+ 1200.000000  -15334.649414
+ 1600.000000  -15730.441406
+ 2000.000000  -15447.858398
+ 2400.000000  -15598.224609
+ 2800.000000  -15370.957031
+ 3200.000000  -15177.194336
+ 3600.000000  -15312.907227
+ 4000.000000  -15278.917969
+ 4400.000000  -15148.030273
+ 4800.000000  -15199.714844
+ 5200.000000  -15480.589844
+ 5600.000000  -14894.836914
+ 6000.000000  -14707.323242
+ 6400.000000  -14862.236328
+ 6800.000000  -15861.890625
+ 7200.000000  -15375.470703
+ 7600.000000  -14880.904297
+ 8000.000000  -15589.182617
+ 8400.000000  -15647.459961
+ 8800.000000  -15772.849609
+ 9200.000000  -15755.199219
+ 9600.000000  -15085.781250
+10000.000000  -15433.825195

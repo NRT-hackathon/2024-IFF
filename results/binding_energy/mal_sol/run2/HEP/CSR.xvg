@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:45:12 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run2/HEP
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o CSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coul-SR:HEP-SOL"
+    0.000000  -15085.753906
+  400.000000  -15353.175781
+  800.000000  -15750.800781
+ 1200.000000  -15348.363281
+ 1600.000000  -15459.007812
+ 2000.000000  -14984.163086
+ 2400.000000  -15142.945312
+ 2800.000000  -14334.180664
+ 3200.000000  -15251.843750
+ 3600.000000  -14762.515625
+ 4000.000000  -15128.924805
+ 4400.000000  -14778.168945
+ 4800.000000  -14944.892578
+ 5200.000000  -14677.548828
+ 5600.000000  -15636.798828
+ 6000.000000  -15194.990234
+ 6400.000000  -15420.376953
+ 6800.000000  -15538.160156
+ 7200.000000  -14270.613281
+ 7600.000000  -14934.357422
+ 8000.000000  -15214.467773
+ 8400.000000  -14848.082031
+ 8800.000000  -15045.706055
+ 9200.000000  -15126.921875
+ 9600.000000  -15128.670898
+10000.000000  -15111.180664

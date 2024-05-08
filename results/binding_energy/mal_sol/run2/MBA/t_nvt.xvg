@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 15:16:36 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/binding_energy/mal_sol/run2/MBA
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Grunge ROck MAChoS
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  301.090637
+    2.000000  299.511810
+    4.000000  301.217133
+    6.000000  299.709381
+    8.000000  296.734619
+   10.000000  294.352509
+   12.000000  296.709198
+   14.000000  300.079712
+   16.000000  299.749237
+   18.000000  303.311981
+   20.000000  296.745941
+   22.000000  298.326813
+   24.000000  298.224182
+   26.000000  301.894928
+   28.000000  297.914886
+   30.000000  299.590546
+   32.000000  293.686615
+   34.000000  299.690369
+   36.000000  299.670502
+   38.000000  300.601959
+   40.000000  293.146027
+   42.000000  299.004608
+   44.000000  304.749817
+   46.000000  300.948303
+   48.000000  296.128174
+   50.000000  301.331726

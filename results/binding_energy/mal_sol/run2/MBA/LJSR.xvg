@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:45:18 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run2/MBA
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o LJSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Glycine aRginine prOline Methionine Alanine Cystine Serine
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ-SR:MBA-SOL"
+    0.000000  -2405.922363
+  400.000000  -2035.550659
+  800.000000  -1944.125732
+ 1200.000000  -1999.174316
+ 1600.000000  -2093.475830
+ 2000.000000  -1817.472046
+ 2400.000000  -1898.735718
+ 2800.000000  -1558.560059
+ 3200.000000  -1841.336670
+ 3600.000000  -1719.405884
+ 4000.000000  -1473.524902
+ 4400.000000  -1451.116821
+ 4800.000000  -1642.247314
+ 5200.000000  -1623.149902
+ 5600.000000  -1410.389282
+ 6000.000000  -1552.868164
+ 6400.000000  -1240.941162
+ 6800.000000  -1473.056152
+ 7200.000000  -1241.000977
+ 7600.000000  -1291.439453
+ 8000.000000  -1676.178711
+ 8400.000000  -1617.138550
+ 8800.000000  -1676.722290
+ 9200.000000  -1524.744385
+ 9600.000000  -1686.088135
+10000.000000  -1718.404785

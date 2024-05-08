@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 15:15:59 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/binding_energy/mal_sol/run2/ETB
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  296.556458
+    2.000000  302.674133
+    4.000000  299.735840
+    6.000000  295.272003
+    8.000000  297.821838
+   10.000000  296.342438
+   12.000000  296.108521
+   14.000000  301.035095
+   16.000000  295.938477
+   18.000000  300.094482
+   20.000000  297.997772
+   22.000000  295.586151
+   24.000000  297.202209
+   26.000000  301.322266
+   28.000000  297.163116
+   30.000000  300.788452
+   32.000000  298.309357
+   34.000000  295.917114
+   36.000000  297.668579
+   38.000000  297.207031
+   40.000000  300.760773
+   42.000000  294.059082
+   44.000000  302.646820
+   46.000000  300.493317
+   48.000000  299.261963
+   50.000000  295.345459

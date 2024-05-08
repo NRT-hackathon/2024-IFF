@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 17:21:04 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/binding_energy/mal_sol/run2/MBA
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o t_prod.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  298.793793
+  400.000000  296.008087
+  800.000000  298.092102
+ 1200.000000  302.087738
+ 1600.000000  299.929657
+ 2000.000000  296.341003
+ 2400.000000  299.542999
+ 2800.000000  298.163727
+ 3200.000000  294.313904
+ 3600.000000  295.429504
+ 4000.000000  301.419647
+ 4400.000000  295.912384
+ 4800.000000  302.781982
+ 5200.000000  295.447144
+ 5600.000000  295.947021
+ 6000.000000  300.291901
+ 6400.000000  298.097931
+ 6800.000000  301.465027
+ 7200.000000  301.457275
+ 7600.000000  293.135010
+ 8000.000000  295.749115
+ 8400.000000  302.781189
+ 8800.000000  295.416748
+ 9200.000000  299.690796
+ 9600.000000  297.927643
+10000.000000  297.681244

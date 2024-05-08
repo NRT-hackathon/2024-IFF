@@ -1,0 +1,52 @@
+# This file was created Sat Apr 20 17:46:57 2024
+# Created by:
+#                       :-) GROMACS - gmx msd, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/pet_sol/run1
+# Command line:
+#   gmx_mpi msd -s md_1.tpr -f md_1.trr -o msd.xvg -sel 3 4 2 -maxtau 1000 -pbc yes
+# gmx msd is part of G R O M A C S:
+#
+# GRowing Old MAkes el Chrono Sweat
+#
+@    title "Mean Squared Displacement"
+@    xaxis  label "tau (ps)"
+@    yaxis  label "MSD (nm\\S2\\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "D[     Water] = 3.8746 (+/- 0.0076) (1e-5 cm^2/s)"
+@ s1 legend "D[       SOL] = 3.8746 (+/- 0.0076) (1e-5 cm^2/s)"
+@ s2 legend "D[       PET] = 0.0280 (+/- 0.0074) (1e-5 cm^2/s)"
+      0.000          0          0          0
+     40.000   0.968683   0.968683  0.0457019
+     80.000    1.89497    1.89497  0.0451975
+    120.000    2.83291    2.83291   0.062652
+    160.000    3.76151    3.76151  0.0667228
+    200.000    4.69578    4.69578  0.0788777
+    240.000     5.6268     5.6268  0.0844013
+    280.000    6.55846    6.55846  0.0934567
+    320.000      7.489      7.489   0.100466
+    360.000    8.41771    8.41771   0.105843
+    400.000    9.34772    9.34772   0.112903
+    440.000    10.2765    10.2765   0.119521
+    480.000     11.207     11.207   0.126084
+    520.000    12.1354    12.1354   0.132256
+    560.000     13.066     13.066   0.139962
+    600.000    13.9957    13.9957   0.145925
+    640.000    14.9242    14.9242    0.15201
+    680.000    15.8534    15.8534   0.158773
+    720.000    16.7826    16.7826   0.164404
+    760.000    17.7113    17.7113   0.169314
+    800.000    18.6406    18.6406   0.174475
+    840.000    19.5711    19.5711   0.181027
+    880.000    20.5016    20.5016   0.186369
+    920.000    21.4304    21.4304   0.191744
+    960.000    22.3601    22.3601   0.197142
+   1000.000    23.2907    23.2907   0.202465

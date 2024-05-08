@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:45:13 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run2/HEP
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o LJSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ-SR:HEP-SOL"
+    0.000000  -2319.165039
+  400.000000  -2198.874756
+  800.000000  -2217.085938
+ 1200.000000  -2112.998291
+ 1600.000000  -2119.414551
+ 2000.000000  -2276.101562
+ 2400.000000  -2237.768555
+ 2800.000000  -2354.023926
+ 3200.000000  -2224.525879
+ 3600.000000  -2348.050293
+ 4000.000000  -2165.303955
+ 4400.000000  -2383.998779
+ 4800.000000  -2277.300537
+ 5200.000000  -2413.997070
+ 5600.000000  -2111.513672
+ 6000.000000  -2352.058105
+ 6400.000000  -2247.295410
+ 6800.000000  -2218.405029
+ 7200.000000  -2320.678467
+ 7600.000000  -2348.191162
+ 8000.000000  -2020.533447
+ 8400.000000  -2335.069824
+ 8800.000000  -2429.504395
+ 9200.000000  -2256.266602
+ 9600.000000  -2260.746582
+10000.000000  -2383.057861

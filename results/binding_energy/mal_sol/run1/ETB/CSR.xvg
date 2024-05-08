@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:40:21 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run1/ETB
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o CSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# S  C  A  M  O  R  G
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coul-SR:ETB-SOL"
+    0.000000  -3715.645996
+  400.000000  -3213.044189
+  800.000000  -3293.457520
+ 1200.000000  -2549.558594
+ 1600.000000  -2649.567627
+ 2000.000000  -2411.206787
+ 2400.000000  -2390.032227
+ 2800.000000  -2321.303955
+ 3200.000000  -2346.043213
+ 3600.000000  -2382.275879
+ 4000.000000  -2081.381104
+ 4400.000000  -2534.774414
+ 4800.000000  -2356.711914
+ 5200.000000  -2267.806641
+ 5600.000000  -2263.138184
+ 6000.000000  -2261.593994
+ 6400.000000  -2532.349121
+ 6800.000000  -2343.806641
+ 7200.000000  -2551.426270
+ 7600.000000  -2234.271973
+ 8000.000000  -2242.354736
+ 8400.000000  -2424.088135
+ 8800.000000  -2426.946289
+ 9200.000000  -2303.914062
+ 9600.000000  -2426.107178
+10000.000000  -2361.956543

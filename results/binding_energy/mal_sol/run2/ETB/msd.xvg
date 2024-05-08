@@ -1,0 +1,29 @@
+# This file was created Sat Apr 20 17:45:08 2024
+# Created by:
+#                       :-) GROMACS - gmx msd, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run2/ETB
+# Command line:
+#   gmx_mpi msd -s md_1.tpr -f md_1.trr -o msd.xvg -sel 3 4 2 -maxtau 1000 -pbc yes
+# gmx msd is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "Mean Squared Displacement"
+@    xaxis  label "tau (ps)"
+@    yaxis  label "MSD (nm\\S2\\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "D[     Water] = 2.2027 (+/- 0.0000) (1e-5 cm^2/s)"
+@ s1 legend "D[       SOL] = 2.2027 (+/- 0.0000) (1e-5 cm^2/s)"
+@ s2 legend "D[       ETB] = 0.6984 (+/- 0.0000) (1e-5 cm^2/s)"
+      0.000          0          0          0
+    400.000    5.31475    5.31475    1.92556
+    800.000    10.5731    10.5731    3.35248

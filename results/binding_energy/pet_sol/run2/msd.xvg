@@ -1,0 +1,52 @@
+# This file was created Sat Apr 20 17:47:43 2024
+# Created by:
+#                       :-) GROMACS - gmx msd, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/pet_sol/run2
+# Command line:
+#   gmx_mpi msd -s md_1.tpr -f md_1.trr -o msd.xvg -sel 3 4 2 -maxtau 1000 -pbc yes
+# gmx msd is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "Mean Squared Displacement"
+@    xaxis  label "tau (ps)"
+@    yaxis  label "MSD (nm\\S2\\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "D[     Water] = 3.8914 (+/- 0.0041) (1e-5 cm^2/s)"
+@ s1 legend "D[       SOL] = 3.8914 (+/- 0.0041) (1e-5 cm^2/s)"
+@ s2 legend "D[       PET] = 0.0276 (+/- 0.0122) (1e-5 cm^2/s)"
+      0.000          0          0          0
+     40.000   0.971426   0.971426  0.0485278
+     80.000    1.89735    1.89735  0.0451294
+    120.000    2.83602    2.83602  0.0650294
+    160.000    3.76454    3.76454  0.0670721
+    200.000    4.70053    4.70053  0.0792536
+    240.000    5.63115    5.63115  0.0826079
+    280.000    6.56703    6.56703   0.092154
+    320.000    7.50056    7.50056  0.0983666
+    360.000     8.4349     8.4349   0.108791
+    400.000     9.3683     9.3683   0.115115
+    440.000    10.3016    10.3016   0.124333
+    480.000    11.2341    11.2341   0.130429
+    520.000    12.1675    12.1675   0.137983
+    560.000    13.1006    13.1006   0.142039
+    600.000    14.0353    14.0353   0.148278
+    640.000    14.9684    14.9684   0.153098
+    680.000    15.9026    15.9026   0.159088
+    720.000    16.8369    16.8369   0.162648
+    760.000    17.7737    17.7737   0.168133
+    800.000    18.7094    18.7094     0.1725
+    840.000    19.6469    19.6469   0.178675
+    880.000    20.5827    20.5827   0.183971
+    920.000    21.5193    21.5193   0.188832
+    960.000    22.4542    22.4542   0.192168
+   1000.000    23.3902    23.3902   0.195177

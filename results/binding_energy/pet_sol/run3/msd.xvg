@@ -1,0 +1,52 @@
+# This file was created Sat Apr 20 17:47:47 2024
+# Created by:
+#                       :-) GROMACS - gmx msd, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/pet_sol/run3
+# Command line:
+#   gmx_mpi msd -s md_1.tpr -f md_1.trr -o msd.xvg -sel 3 4 2 -maxtau 1000 -pbc yes
+# gmx msd is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "Mean Squared Displacement"
+@    xaxis  label "tau (ps)"
+@    yaxis  label "MSD (nm\\S2\\N)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "D[     Water] = 3.8818 (+/- 0.0089) (1e-5 cm^2/s)"
+@ s1 legend "D[       SOL] = 3.8818 (+/- 0.0089) (1e-5 cm^2/s)"
+@ s2 legend "D[       PET] = 0.0417 (+/- 0.0035) (1e-5 cm^2/s)"
+      0.000          0          0          0
+     40.000   0.967883   0.967883  0.0461218
+     80.000    1.89337    1.89337  0.0467878
+    120.000    2.82927    2.82927  0.0638903
+    160.000    3.75649    3.75649  0.0679977
+    200.000    4.68909    4.68909  0.0819535
+    240.000    5.61804    5.61804  0.0899995
+    280.000    6.54878    6.54878   0.102036
+    320.000    7.47878    7.47878    0.11106
+    360.000    8.41079    8.41079   0.122805
+    400.000    9.34168    9.34168   0.131266
+    440.000    10.2726    10.2726   0.142861
+    480.000    11.2022    11.2022   0.152792
+    520.000    12.1338    12.1338   0.163904
+    560.000    13.0644    13.0644   0.171821
+    600.000    13.9962    13.9962   0.183577
+    640.000    14.9291    14.9291   0.192043
+    680.000    15.8626    15.8626   0.201787
+    720.000    16.7964    16.7964   0.211319
+    760.000    17.7282    17.7282    0.21982
+    800.000     18.664     18.664   0.230496
+    840.000    19.5976    19.5976   0.238503
+    880.000    20.5335    20.5335    0.24965
+    920.000    21.4677    21.4677   0.257186
+    960.000    22.4035    22.4035   0.266233
+   1000.000    23.3399    23.3399   0.272466

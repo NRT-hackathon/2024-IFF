@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:45:31 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run3/ETB
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o LJSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ-SR:ETB-SOL"
+    0.000000  -3565.466064
+  400.000000  -2792.634521
+  800.000000  -2630.745361
+ 1200.000000  -2293.789062
+ 1600.000000  -2099.343994
+ 2000.000000  -1892.110352
+ 2400.000000  -1893.839844
+ 2800.000000  -1542.283936
+ 3200.000000  -1486.024414
+ 3600.000000  -1582.127441
+ 4000.000000  -1580.884399
+ 4400.000000  -1572.350098
+ 4800.000000  -1565.031738
+ 5200.000000  -1780.747437
+ 5600.000000  -1537.093994
+ 6000.000000  -1483.599854
+ 6400.000000  -1694.802734
+ 6800.000000  -1613.811035
+ 7200.000000  -1700.200439
+ 7600.000000  -1644.314209
+ 8000.000000  -1440.495361
+ 8400.000000  -1573.356445
+ 8800.000000  -1681.308594
+ 9200.000000  -1589.893066
+ 9600.000000  -1862.469971
+10000.000000  -1484.612793

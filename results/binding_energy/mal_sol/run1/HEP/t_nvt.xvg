@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 15:15:09 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/binding_energy/mal_sol/run1/HEP
+# Command line:
+#   gmx_mpi energy -f nvt.edr -o t_nvt.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Great Red Oystrich Makes All Chemists Sane
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  300.017639
+    2.000000  296.554474
+    4.000000  297.371460
+    6.000000  294.857971
+    8.000000  297.379639
+   10.000000  295.405273
+   12.000000  292.502014
+   14.000000  299.941193
+   16.000000  294.517426
+   18.000000  292.689026
+   20.000000  299.869843
+   22.000000  297.724365
+   24.000000  295.514160
+   26.000000  294.104156
+   28.000000  294.443359
+   30.000000  301.351105
+   32.000000  294.081787
+   34.000000  297.236694
+   36.000000  297.706055
+   38.000000  298.548340
+   40.000000  300.269501
+   42.000000  297.638214
+   44.000000  298.326233
+   46.000000  298.884705
+   48.000000  301.076721
+   50.000000  299.932251

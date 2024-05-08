@@ -1,0 +1,50 @@
+# This file was created Thu Apr 18 17:27:11 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/users/3476/IFF_fiber_wetting/darwin_runs/binding_energy/mal_sol/run1/HEP
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o t_prod.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Gravel Rubs Often Many Awfully Cauterized Sores
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  295.289948
+  400.000000  298.366089
+  800.000000  292.743561
+ 1200.000000  296.872101
+ 1600.000000  296.537598
+ 2000.000000  296.342316
+ 2400.000000  298.872955
+ 2800.000000  298.251404
+ 3200.000000  298.682587
+ 3600.000000  294.611816
+ 4000.000000  297.343964
+ 4400.000000  303.626312
+ 4800.000000  302.549622
+ 5200.000000  295.376160
+ 5600.000000  298.010895
+ 6000.000000  296.799866
+ 6400.000000  298.791870
+ 6800.000000  299.913483
+ 7200.000000  298.132904
+ 7600.000000  297.920349
+ 8000.000000  295.536133
+ 8400.000000  303.537201
+ 8800.000000  300.668243
+ 9200.000000  295.359772
+ 9600.000000  301.877502
+10000.000000  297.735535

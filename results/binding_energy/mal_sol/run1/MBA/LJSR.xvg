@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 18:05:45 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run1/MBA
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o LJSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ-SR:MBA-SOL"
+    0.000000  -2364.194092
+  400.000000  -1997.818848
+  800.000000  -1930.117798
+ 1200.000000  -2002.264893
+ 1600.000000  -1851.662720
+ 2000.000000  -1643.334106
+ 2400.000000  -1711.268066
+ 2800.000000  -1796.483276
+ 3200.000000  -1451.289429
+ 3600.000000  -1640.375366
+ 4000.000000  -1608.024902
+ 4400.000000  -1449.185791
+ 4800.000000  -1703.425171
+ 5200.000000  -1631.216797
+ 5600.000000  -1772.628906
+ 6000.000000  -1476.383301
+ 6400.000000  -1544.137329
+ 6800.000000  -1514.025635
+ 7200.000000  -1573.797852
+ 7600.000000  -1448.250000
+ 8000.000000  -1461.125732
+ 8400.000000  -1842.655396
+ 8800.000000  -1691.906006
+ 9200.000000  -1540.456543
+ 9600.000000  -1388.425171
+10000.000000  -1526.092773

@@ -1,0 +1,50 @@
+# This file was created Sat Apr 20 17:43:08 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2023.2 (-:
+# 
+# Executable:   /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi/bin/gmx_mpi
+# Data prefix:  /opt/shared/gromacs/2023.2-gcc-cuda/single-mpi
+# Working dir:  /lustre/ea-nrtmidas/IFF_data/binding_energy/mal_sol/run1/HEP
+# Command line:
+#   gmx_mpi energy -f md_1.edr -o CSR.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Coul-SR:HEP-SOL"
+    0.000000  -16044.525391
+  400.000000  -15768.832031
+  800.000000  -15635.377930
+ 1200.000000  -15910.046875
+ 1600.000000  -15073.115234
+ 2000.000000  -15237.636719
+ 2400.000000  -15380.740234
+ 2800.000000  -15007.041016
+ 3200.000000  -14999.083008
+ 3600.000000  -15223.026367
+ 4000.000000  -15123.962891
+ 4400.000000  -15449.517578
+ 4800.000000  -15228.717773
+ 5200.000000  -14785.771484
+ 5600.000000  -14581.986328
+ 6000.000000  -14991.126953
+ 6400.000000  -15595.431641
+ 6800.000000  -14552.115234
+ 7200.000000  -14530.573242
+ 7600.000000  -14747.779297
+ 8000.000000  -15063.647461
+ 8400.000000  -15031.422852
+ 8800.000000  -14446.678711
+ 9200.000000  -14796.232422
+ 9600.000000  -15904.085938
+10000.000000  -14654.804688
