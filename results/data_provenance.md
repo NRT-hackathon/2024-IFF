@@ -21,7 +21,22 @@ GROMACS was used to perform the molecular dynamics simulations performed during 
 
 ## Data provenance
 
-Three configurations of malodour molecule and PET fiber systems were constructed and simulated in an anhydrous and hydrated state. Three analysis techniques were used to calculate the desired properties and those were the radial distribution function (RDF), cluster size, and binding energy calculated using the Linear Interaction Energy technique (LIE). 
+Three configurations of malodour molecule and PET fiber systems were constructed and simulated in an anhydrous and hydrated state. Three analysis techniques were used to calculate the desired properties and those were the radial distribution function (RDF), cluster size, and binding energy calculated using the Linear Interaction Energy technique (LIE). Within each folder is a data analysis script titled `read_xvg.ipynb`. By opening and running the script in your IDE of choice, the plots used for the report in addition to many others can be generated. 
+
+Within each folder lies `edited_conf.gro` and `md_1.gro` which contains the initial and final configuration for that simulation as read by GROMACS. The appropriate molecule definitions for PET and the malodour molecule are in their respect `.itp` files. All input scripts for the various stages of the simulation are laballed `minim.mdp` for energy minimization, `prod_nvt.mdp` and `prod_npt.mdp` for NVT and NPT equiilibration and `prod_md.mdp` for production simulations respectively. Cluster size relevant files have `clustsize` in their filenames. MSD related files are labelled `msd.vxg`. RDF's are split into species RDF's generating data from the distance between the center of masses of species and bond RDF's which generate data based on the distance between specific atoms in each species. The former RDF type is labelled `rdf_{reference species}` where reference species is the species to which all other species distances are computed. The bond RDF's are labelled `rdf_{bond type}` where bond type is dipole or van der Walls (vdw). 
+
+### Calculation of parameters needed for Linear Interaction Energy calculation
+
+For the LIE technique, the LJ and Coulombic energies for each species relative to water are necessary. To obtain the constants for the malodor molecule, 100 malodor molecules were placed in a $5nm^3$ box with water which was run for 10ns. For the PET chain, the 50mer long chain was placed in the center of a box which was $60 \cdot 3 \cdot 3 nm^3$ and run for 10ns. The stabilization of the necessary constants were ensure by plotting them as a function of time. This was repeated 3 times and the average of the 3 values was used in further LIE operations.
+
+| Species | run1  | run2  | run3 |
+|---|---|---|---|
+| ETB | `binding_energy/mal_sol/run1/ETB`  | `binding_energy/mal_sol/run2/ETB`  | `binding_energy/mal_sol/run3/ETB` |
+| HEP | `binding_energy/mal_sol/run1/HEP`  | `binding_energy/mal_sol/run2/HEP`  | `binding_energy/mal_sol/run3/HEP` |
+| MBA | `binding_energy/mal_sol/run1/MBA`  | `binding_energy/mal_sol/run2/MBA`  | `binding_energy/mal_sol/run3/MBA` |
+| PET | `binding_energy/pet_sol/run1/`  | `binding_energy/pet_sol/run2/`  | `binding_energy/pet_sol/run3/` |
+
+The data to be plotted are located in `CSR.xvg` for the coulombic constant and `LJSR.xvg` for the LJ constant.
 
 ### Single chain with single molecules around it
 
